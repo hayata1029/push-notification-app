@@ -1,10 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Notifications } from "react-push-notification";
+import ButtonPush from "./components/ButtonPush";
 
 function App() {
   return (
     <div className="App">
+      <Notifications />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,6 +22,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <body>
+        <ButtonPush />
+      </body>
     </div>
   );
 }
